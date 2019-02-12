@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Lesson from './02_components/Lesson';
-//import Lesson from './03_state/Lesson';
+//import Lesson from './02_components/Lesson';
+import Lesson from './03_state/Lesson';
 //import Lesson from './04_props/Lesson';
 import * as serviceWorker from './serviceWorker';
 
