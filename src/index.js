@@ -10,7 +10,8 @@ import './index.css';
 //import  Lesson  from './08_listANDkeys/Lesson';
 //import  Lesson  from './09_fragment_&_css/Lesson';
 //import  Lesson  from './10_forms/Lesson';
-import  Lesson  from './12_refs/Lesson';
+//import  Lesson  from './12_refs/Lesson';
+import  Lesson  from './13_high_order_components/Lesson';
 import * as serviceWorker from './serviceWorker';
 
 //Создание компонентов реакт без файла с расширением .jsx
