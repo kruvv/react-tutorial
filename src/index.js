@@ -12,7 +12,8 @@ import './index.css';
 //import  Lesson  from './10_forms/Lesson';
 //import  Lesson  from './12_refs/Lesson';
 //import  Lesson  from './13_high_order_components/Lesson';
-import  Lesson  from './14_portals/Lesson';
+//import  Lesson  from './14_portals/Lesson';
+import  Lesson  from './15_context/Lesson';
 import * as serviceWorker from './serviceWorker';
 
 //Создание компонентов реакт без файла с расширением .jsx
