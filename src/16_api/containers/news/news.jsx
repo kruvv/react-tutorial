@@ -45,14 +45,14 @@ class News extends Component {
     const { searchQuery, hitsPerPage, page } = this.state;
     this.fetchData(searchQuery, hitsPerPage, page);
   }
-
+//Запрос к сайту на получение новостей
   fetchData = (searchQuery, hitsPerPage, page) => {
     fetch(`${BASE_PATH}${SEARCH_PATH}?${SEARCH_PARAM}${searchQuery}&${PAGE_HITS}${hitsPerPage}&${PAGE_PARAM}${page}`)
       .then(res => res.json())
       .then(result => this.setNews(result))
       .catch(error => error);
   }
-
+//Обработка строки поиска
   handleInputChange = ({ target: { value } }) => {
     this.setState({
       searchQuery: value
@@ -72,7 +72,7 @@ class News extends Component {
   setNews = result => {
     this.setState({ result });
   }
-
+//Обработка колличества показаваемых новостей (10, 20, 40, 50)
   handleHitsChange = ({ target: { value }}) => {
     const { searchQuery } = this.state;
 
@@ -83,7 +83,7 @@ class News extends Component {
       this.fetchData(searchQuery, this.state.hitsPerPage, 0);
     })
   }
-
+//Обработка выбора страницы в пагинации
   handlePageChange = ({ target }) => {
     const btnType = target.getAttribute('data-name');
     let { page } = this.state;
@@ -102,7 +102,7 @@ class News extends Component {
         }
       }
     }
-
+//Обновление страницы при пагинации
   updatePage = (number) => {
     const { searchQuery, hitsPerPage } = this.state;
     this.setState({
